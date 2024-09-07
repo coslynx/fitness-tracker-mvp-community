@@ -1,0 +1,81 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "types": [
+      "vite/client",
+      "next-auth",
+      "react",
+      "react-dom",
+      "zustand",
+      "tailwindcss",
+      "postcss",
+      "autoprefixer",
+      "prisma"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": [
+        "components/*"
+      ],
+      "@pages/*": [
+        "pages/*"
+      ],
+      "@styles/*": [
+        "styles/*"
+      ],
+      "@utils/*": [
+        "utils/*"
+      ],
+      "@config/*": [
+        "config/*"
+      ],
+      "@middleware/*": [
+        "middleware/*"
+      ]
+    },
+    "lib": [
+      "dom",
+      "esnext",
+      "es2022"
+    ]
+  },
+  "include": [
+    "next.config.js",
+    "pages/**/*.{ts,tsx}",
+    "components/**/*.{ts,tsx}",
+    "styles/**/*.{ts,tsx}",
+    "utils/**/*.{ts,tsx}",
+    "config/**/*.{ts,tsx}",
+    "middleware/**/*.{ts,tsx}",
+    "app/**/*.{ts,tsx}",
+    "src/**/*.{ts,tsx}",
+    "**/*.{ts,tsx}"
+  ],
+  "exclude": [
+    "node_modules",
+    ".next",
+    "out",
+    "dist",
+    "cypress",
+    "coverage",
+    "*.d.ts"
+  ],
+  "references": [
+    {
+      "path": "./prisma/generated/client"
+    }
+  ]
+}
